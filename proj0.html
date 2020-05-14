@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Me , Myself, and I </title>
+
+        <meta charset="UTF-8">
+        <link rel=stylesheet type="text/css" href="proj0.css">
+        <style>
+    body {font-family: "Times New Roman", Georgia, Serif;}
+    h1,h2,h3,h4,h5,h6 {
+        font-family: "Playfair Display";
+        letter-spacing: 5 px;
+    }
+    </style>
+    </head>
+
+    <body>
+
+      <section class="MenuBar">
+        <div id="LeftSideBar" style="letter-spacing:4px;">
+          <a href="proj0.html">Jessa Honrade</a>
+
+          <!-- Right-sided navbar links. Hide them on small screens -->
+          <div id="RightSideBar">
+            <a href="life.html">Life</a>
+            <a href="faves.html">Faves</a>
+            <a href="aspire.html">Aspirations</a>
+          </div>
+        </div>
+      </section>
+<div class="proj0">
+          <!-- Slideshow container -->
+      <div class="slideshow-container" id="home">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <img src="pic1.jpg" style="width:100%; height:623px;">
+
+        </div>
+
+        <div class="mySlides fade">
+          <img src="pic2.jpg" style="width:100%; height:623px;">
+
+        </div>
+
+        <div class="mySlides fade">
+          <img src="pic3.jpg" style="width:100%; height:623px;">
+
+        </div>
+
+        <div class="mySlides fade">
+          <img src="pic4.jpg" style="width:100%; height:623px;">
+
+        </div>
+
+        <div class="mySlides fade">
+          <img src="pic5.JPG" style="width:100%; height:623px;">
+
+        </div>
+
+      </div>
+      <br>
+
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+</div>
+         <!--Java script for slideshow-->
+      <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+      </script>
+
+
+    </body>
+</html>

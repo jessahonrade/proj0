@@ -1,0 +1,19 @@
+.fulfilled, .on-going, .not-yet {
+	 font-family: "times new roman";
+	 font-size: 15px;
+	 padding: 10px;
+	 margin: auto;
+	 color: white;
+}
+ .fulfilled {
+	 border: 2px solid #030;
+	 background-color: #093;
+}
+ .on-going {
+	 border: 2px solid #f60;
+	 background-color: #f93;
+}
+ .not-yet {
+	 border: 2px solid #800000;
+	 background-color: #993333;
+}

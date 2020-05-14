@@ -1,0 +1,25 @@
+%aspire{
+  font-family: "times new roman";
+  font-size: 15px;
+  padding: 10px;
+  margin: auto;
+  color: white;
+}
+
+.fulfilled{
+  @extend %aspire;
+  border: 2px solid #003300;
+  background-color: #009933;
+}
+
+.on-going {
+  @extend %aspire;
+  border: 2px solid #ff6600;
+  background-color: #ff9933;
+}
+
+.not-yet {
+  @extend %aspire;
+  border: 2px solid #800000;
+  background-color: ##993333;
+}
